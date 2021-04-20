@@ -6,11 +6,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import React, { useEffect, useState } from 'react'
-import {Row,  Col} from 'react-bootstrap'
+import {  TextField } from '@material-ui/core'
 // import Table from 'react-bootstrap/Table'
 import '../App.css'
 import { makeStyles, withStyles } from '@material-ui/core';
-
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -40,6 +39,7 @@ const StyledTableCell = withStyles((theme) => ({
 const HospitalsBeds = () => {
 
     const [hospitals, setHospitals] = useState([]);
+    const [input , setinput] = useState('')
 
     useEffect(() => {
         const getHospitasBeds = async () => {
@@ -55,9 +55,20 @@ const HospitalsBeds = () => {
         getHospitasBeds()
     } , [])
 
+    const onInputChange = (e) => {
+        setinput(e.target.value);
+    }
+
+    let filterState = hospitals.filter((region) => {
+        return region.state.toLocaleLowerCase().includes(input.toLocaleLowerCase());
+    })
+
     return (
         <div>
-            <h1>Hospitals & Beds</h1>
+            <h3 style={{padding: '1rem'}}>Hospitals & Beds</h3>
+
+            <TextField style={{margin: '1rem'}} value={input} onChange={onInputChange} id="outlined-basic" label="State" variant="outlined" />
+
             <TableContainer component={Paper}>
                 <Table aria-label="customized table">
                     <TableHead>
@@ -73,11 +84,8 @@ const HospitalsBeds = () => {
                     </TableHead>
                     <TableBody>
                     {
-                        hospitals.map((hospital) => (
-                            <StyledTableRow key={hospital.name}>
-                                {/* <StyledTableCell component="th" scope="row">
-                                    {row.name}
-                                </StyledTableCell> */}
+                        filterState.map((hospital , id) => (
+                            <StyledTableRow key={id}>
                                 <StyledTableCell>{hospital.state}</StyledTableCell>
                                 <StyledTableCell>{hospital.totalHospitals}</StyledTableCell>
                                 <StyledTableCell>{hospital.totalBeds}</StyledTableCell>

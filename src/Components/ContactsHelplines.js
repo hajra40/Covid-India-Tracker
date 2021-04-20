@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import {Card} from 'react-bootstrap'
-import { Redirect } from 'react-router';
+import {Card} from 'react-bootstrap';
+import {  TextField } from '@material-ui/core'
 
 const ContactsHelplines = () => {
     const [regional , setregional] = useState([]);
@@ -8,6 +8,7 @@ const ContactsHelplines = () => {
     const [primaryemail , setPrimaryemail] = useState('')
     const [primarytwitter , setPrimarytwitter] = useState('')
     const [primaryfacebook , setPrimaryfacebook] = useState('')
+    const [input , setinput] = useState('')
 
     useEffect(() => {
         const getContactsHelplines = async () => {
@@ -21,12 +22,20 @@ const ContactsHelplines = () => {
                 setPrimaryemail(res.data.contacts.primary.email)
             })
             .catch(err => {
-                Redirect("/error")
+                alert(err)
             })
         }
 
         getContactsHelplines();
     } , [])
+
+    const onInputChange = (e) => {
+        setinput(e.target.value);
+    }
+
+    let filterState = regional.filter((region) => {
+        return region.loc.toLocaleLowerCase().includes(input.toLocaleLowerCase());
+    })
 
     return (
         <div className="contacts">
@@ -43,17 +52,17 @@ const ContactsHelplines = () => {
                             <strong>Twitter </strong>: {primarytwitter}<br />                            
                             <strong>Facebook </strong> : {primaryfacebook}                         
                             
-                            {/* <br /> */}
-                            
                         </Card.Text>
                     </Card.Body>
                 </Card>
+
             <h4>Regional Contacts</h4>
+            <TextField value={input} onChange={onInputChange} id="outlined-basic" label="State" variant="outlined" />
             <div className="grid_cards">
                  {
-                    regional.map((region) => {
+                    filterState.map((region , id) => {
                         return (
-                            <Card className="card_help" style={{ width: '18rem' }}>
+                            <Card key={id} className="card_help" style={{ width: '18rem' }}>
                                 <Card.Body>
                                     <Card.Title><strong>{`${region.loc}`}</strong></Card.Title>
                                     <Card.Text>
