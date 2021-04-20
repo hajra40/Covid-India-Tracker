@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Shanti', sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.worldapp__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.worldapp__status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.worldapp {
+  display: flex;
+  flex: 1;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.worldapp__left {
+  flex: 0.9;
+  margin: 2rem;
+}
+
+.map {
+    height: 500px;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);
+}
+
+.map .leafletcont {
+    height: 100%;
+}
+
+.india__app {
+    margin: 2rem;
+}
+/* .worldapp__right {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0rem;
+} */
+.lg__visible {
+    display: none;
+}
+
+@media (max-width: 990px) {
+  .worldapp {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+    .md__visible {
+        display: none;
+    }
+
+    .lg__visible{
+        display: block;
+    }
+}

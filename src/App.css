@@ -1,38 +1,163 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
   text-align: center;
+  font-family: 'Crimson Text', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background: rgb(248, 248, 248);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left__app {
+  flex: 0.7;
+  margin: 1rem 1.5rem;
+}
+
+.card {
+  width: fit-content;
+  background: rgb(248, 248, 248);
+}
+
+.card_help {
+  margin: 1rem 0rem;
+}
+
+.main_card {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  margin: 2rem 0rem;
+}
+
+.card_helpline {
+  padding: 1rem;
+  width: auto;
+}
+
+.dark {
+  background-color: #000;
+  color: #ddd;
+  padding: 0.2rem;
+}
+
+.table {
+  border-radius: 10px;
+}
+
+.tabs {
+  margin: 2rem;
+}
+
+.grid_cards {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: whitesmoke;
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+  padding: 0.5rem;
+}
+
+.footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #000;
+  color: whitesmoke;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+  padding: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  /* margin: 2rem; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .about {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+} */
+
+.heart {
+  color: red;
+}
+
+.chip {
+  margin: 1rem 0.4rem;
+}
+
+.connect__btn {
+  position: fixed;
+  bottom: 10vh;
+  right: 3vw;;
+}
+
+@media (max-width: 890px) {
+  .grid_cards {
+    grid-template-columns: repeat(2 , 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  .tags {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .tabs {
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+}
+
+.not__found {
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .main_card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
+  }
+
+  .grid_cards {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+
+  .tags {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .card {
+    margin: 1rem;
+    width: 100%;
   }
 }
