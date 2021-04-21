@@ -112,14 +112,6 @@ const Worldwide = () => {
                     <InfoBoxs title="Recovered" cases={countryInfo.todayRecovered} total={countryInfo.recovered}/>
                     <InfoBoxs title="Deaths" cases={countryInfo.todayDeaths} total={countryInfo.deaths}/>
                 </div>
-                
-                {/* map */}
-                <Map
-                    countries={mapCountries}
-                    center={mapCenter}
-                    zoom={zoom}
-                    casesType={casesType}
-                />
             </div>
 
             <Card className="worldapp__right">

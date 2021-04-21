@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div className="about">
                 <h1>About</h1>
-                <p>Hey!! I am Hajra , pursuing Bachelor's Degree in Computer Science from Jamia Hamdard. I'm a Front-end Developer and a coder of intermediate level. Connect with me if you wan to do any project with me.</p>
+                <p>Hey!! I am Hajra , pursuing Bachelor's Degree in Computer Science from Jamia Hamdard. I'm a Front-end Developer and a coder of intermediate level. Connect with me if you want to do any project with me.</p>
                 <h4>Made with <FavoriteIcon className="heart"/> by Hajra &copy; 2021 - 2022</h4>
             </div>
             

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Card , CardContent , Typography} from '@material-ui/core'
 import CurrCard from './CurrCard'
 
 const CurrentStatus = () => {
@@ -12,7 +11,6 @@ const CurrentStatus = () => {
             await fetch('https://api.rootnet.in/covid19-in/stats/latest')
             .then(data=> data.json())
             .then(res => {
-                console.log(res.data.summary)
                 setTotal(res.data.summary.total)
                 setTotalDeaths(res.data.summary.deaths)
                 setTotalCon(res.data.summary.discharged)
@@ -25,9 +23,9 @@ const CurrentStatus = () => {
     return (
         <div className="main_card">
             <CurrCard title="Total Cases" value={total} className="dark"/>
-            <CurrCard title="Active Cases" value={total-(totalconfirmed + totaldeaths)} className="dark"/>
-            <CurrCard title="Discharged" value={totalconfirmed} className="green" />
-            <CurrCard title="Deaths" value={totaldeaths} borderColor="error.main" />
+            <CurrCard title="Total Active Cases" value={total-(totalconfirmed + totaldeaths)} className="dark"/>
+            <CurrCard title="Total Discharged" value={totalconfirmed} className="green" />
+            <CurrCard title="Total Deaths" value={totaldeaths} borderColor="error.main" />
         </div>
     )
 }

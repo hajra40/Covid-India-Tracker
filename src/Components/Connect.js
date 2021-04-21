@@ -2,12 +2,6 @@ import React , {useState} from 'react'
 import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
-// import {SpeedDial , SpeedDialAction , SpeedDialIcon} from '@material-ui/lab'
-import FileCopyIcon from '@material-ui/icons/FileCopyOutlined';
-import SaveIcon from '@material-ui/icons/Save';
-import PrintIcon from '@material-ui/icons/Print';
-import ShareIcon from '@material-ui/icons/Share';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import EditIcon from '@material-ui/icons/Edit';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -18,10 +12,7 @@ const Connect = () => {
     // const classes = useStyles();
     const [open, setOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
-  
-    const handleVisibility = () => {
-      setHidden((prevHidden) => !prevHidden);
-    };
+
   
     const handleOpen = () => {
       setOpen(true);

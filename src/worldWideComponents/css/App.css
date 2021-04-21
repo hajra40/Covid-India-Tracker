@@ -50,15 +50,7 @@ body {
 .india__app {
     margin: 2rem;
 }
-/* .worldapp__right {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem 0rem;
-} */
+
 .lg__visible {
     display: none;
 }
@@ -66,6 +58,10 @@ body {
 @media (max-width: 990px) {
   .worldapp {
     flex-direction: column;
+  }
+  
+  .worldapp__left {
+    margin: 0;
   }
 }
 
@@ -76,5 +72,9 @@ body {
 
     .lg__visible{
         display: block;
+    }
+
+    .worldapp__header {
+      flex-direction: column;
     }
 }
