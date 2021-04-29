@@ -2,14 +2,13 @@ import React , {useState} from 'react'
 import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
-import EditIcon from '@material-ui/icons/Edit';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import CodeIcon from '@material-ui/icons/Code';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
 const Connect = () => {
-    // const classes = useStyles();
     const [open, setOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
 
@@ -35,7 +34,7 @@ const Connect = () => {
             <SpeedDial
                 ariaLabel="SpeedDial openIcon example"
                 hidden={hidden}
-                icon={<SpeedDialIcon openIcon={<EditIcon />} />}
+                icon={<SpeedDialIcon openIcon={<HighlightOffIcon />} />}
                 onClose={handleClose}
                 onOpen={handleOpen}
                 tooltipTitle={'Connect'}

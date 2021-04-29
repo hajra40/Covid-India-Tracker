@@ -8,7 +8,6 @@ const HelpIndia = () => {
             <div className="help__container">
                 <h1>Let's Help India Breathe</h1>
                 <h4><a href="https://milaap.org/#:~:text=Free%20Crowdfunding%20for%20India&text=%231%20Fundraising%20website%20in%20India,Milaap">Donate Now</a></h4>
-                <h4>Join <a href="https://discord.gg/aNSKcBeY">Discord Server</a> (Delhi) for resources</h4>
             </div>
             
         </div>

@@ -32,7 +32,19 @@ function getSteps() {
   return ['Start', 'Analyse', 'Result & Tips'];
 }
 
-export default function VerticalLinearStepper() {    
+export default function VerticalLinearStepper() {
+
+    const updateOne = () => {
+        stage1 = stage1 + 1;
+        console.log(stage1, stage2)
+    }
+    
+    const updateTwo = () => {
+        stage2 = stage2 + 1;
+        console.log(stage1, stage2)
+    }
+
+    
 
     useEffect(() => {
       if(stage2 > 0) {

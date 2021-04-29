@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent , Typography } from '@material-ui/core'
+import { Button, Card, CardContent , Typography } from '@material-ui/core'
 import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos'
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import {Link} from 'react-router-dom'
@@ -33,7 +33,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://covidbeds.info/hyderabad-beds/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -47,7 +47,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://delhifightscorona.in/testing/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -63,7 +63,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://verifiedcovidleads.com/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -76,7 +76,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://covid19helpindia.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -90,8 +90,9 @@ const helpWebsites = () => {
                             <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
+
                             <a href="https://coviddelhi.com/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -104,7 +105,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://linktr.ee/180dcsggscc">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -117,7 +118,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://linktr.ee/devinachawla">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -130,7 +131,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/1?id=DASHBOARD_601b9e214c7a6b689d76f493&home=1">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -144,7 +145,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://covidrelief.glideapp.io/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -158,7 +159,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://coronaresources.web.app/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -171,8 +172,9 @@ const helpWebsites = () => {
                             <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
+
                             <a href="https://covidkhoj.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -184,8 +186,9 @@ const helpWebsites = () => {
                             Covid Resources
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
+
                             <a href="https://trello.com/b/6ydrkgx0/covid-resources">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -198,9 +201,11 @@ const helpWebsites = () => {
                             <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
+
                             <a href="https://plasmaline.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
+
                         </Typography>
                     </CardContent>
                 </Card>
@@ -212,7 +217,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://indiaplasmadonor.com/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -226,7 +231,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="http://covidahmedabad.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -239,7 +244,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://covidhelpgroup.org/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -253,7 +258,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://stopcorona.tn.gov.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -267,7 +272,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://needplasma.in/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -281,7 +286,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://covidfightclub.org/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -295,7 +300,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://thejasonsamuel.com/fightcovid">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
@@ -309,7 +314,7 @@ const helpWebsites = () => {
                         </Typography>
                         <Typography color="textSecondary" gutterBottom>
                             <a href="https://www.dhoondh.com/">
-                                Visit <ArrowForwardIos /> 
+                                <Button>Visit <ArrowForwardIos /> </Button>
                             </a>
                         </Typography>
                     </CardContent>
