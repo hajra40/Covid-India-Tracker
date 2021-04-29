@@ -138,7 +138,7 @@ export default function VerticalLinearStepper() {
   };
 
   return (
-    <div className={classes.root} style={{minHeight: '70vh', margin: '2rem'}}>
+    <div className={classes.root} style={{minHeight: '74vh', margin: '2rem'}}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((label, index) => (
           <Step key={label}>

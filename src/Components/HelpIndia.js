@@ -9,7 +9,6 @@ const HelpIndia = () => {
                 <h1>Let's Help India Breathe</h1>
                 <h4><a href="https://milaap.org/#:~:text=Free%20Crowdfunding%20for%20India&text=%231%20Fundraising%20website%20in%20India,Milaap">Donate Now</a></h4>
             </div>
-            
         </div>
     )
 }
