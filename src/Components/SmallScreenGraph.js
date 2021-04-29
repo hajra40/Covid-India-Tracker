@@ -32,10 +32,10 @@ const SmallScreenGraph = ({ date, cases , decrease , recovered , day , firstDose
                         {date}
                     </Typography>
                     <Typography variant="h6" component="h2">
-                        Total First Dose : {firstDose}
+                        Total First Dose Administered: {firstDose}
                     </Typography>
                     <Typography variant="h6" component="h2">
-                        Total Second Dose : {secondDose}
+                        Total Second Dose Administered: {secondDose}
                     </Typography>
                 </CardContent>
             </Card>

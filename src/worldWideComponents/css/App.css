@@ -24,27 +24,9 @@ body {
 .worldapp {
   display: flex;
   flex: 1;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
-}
-
-.worldapp__left {
-  flex: 0.9;
-  margin: 2rem;
-}
-
-.map {
-    height: 500px;
-    background: white;
-    padding: 1rem;
-    border-radius: 20px;
-    margin-top: 16px;
-    box-shadow: 0 0 8px -4px rgba(0,0,0,0.5);
-}
-
-.map .leafletcont {
-    height: 100%;
 }
 
 .india__app {
@@ -55,15 +37,6 @@ body {
     display: none;
 }
 
-@media (max-width: 990px) {
-  .worldapp {
-    flex-direction: column;
-  }
-  
-  .worldapp__left {
-    margin: 0;
-  }
-}
 
 @media (max-width: 600px) {
     .md__visible {

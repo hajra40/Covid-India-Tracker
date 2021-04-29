@@ -6,8 +6,6 @@ import InfoBoxs from './worldWideComponents/Components/InfoBoxs';
 import Tables from './worldWideComponents/Components/Table';
 import { sortData } from './worldWideComponents/Components/util';
 import './worldWideComponents/css/App.css'
-import Map from './worldWideComponents/Components/Map';
-import ArrowForwardIos from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { Link } from 'react-router-dom';
 
@@ -16,11 +14,6 @@ const Worldwide = () => {
     const [country , setCountry] = useState('worldwide');
     const [countryInfo , setCountryinfo] = useState({});
     const [tableData, setTableData] = useState([]);
-    const [mapCenter, setMapCenter] = useState([34.80746, -40.4796]);
-    const [zoom, setZoom] = useState(3);
-    const [mapCountries, setMapCountries] = useState([]);
-    const [casesType, setCasesType] = useState("cases");
-    const [isLoading, setLoading] = useState(false);
 
     useEffect(() => {
         fetch('https://disease.sh/v3/covid-19/all')
@@ -37,7 +30,7 @@ const Worldwide = () => {
         .then((data) => {
             const countries = data.map((country) => ({
             name: country.country, //united states
-            value: country.countryInfo.iso2 //uk
+            value: country.countryInfo.iso2 //uk , us
             }))
 
             const sortdata = sortData(data);
@@ -53,7 +46,6 @@ const Worldwide = () => {
     }, [])
 
     const onCountryChange = async (event) => {
-        setLoading(true);
         const countryCode = event.target.value;
     
         setCountry(countryCode);
@@ -65,25 +57,17 @@ const Worldwide = () => {
     
         //https://disease.sh/v3/covid-19/all
         //https://disease.sh/v3/covid-19/countries/[countryCode]
-    
+
         await fetch(url)
           .then((response) => response.json())
           .then((data) => {
             setCountry(countryCode);
             setCountryinfo(data);
-            setLoading(false);
-            countryCode === "worldwide"
-              ? setMapCenter([34.80746, -40.4796])
-              : setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
-            setZoom(4);
           });
     
-        console.log(countryInfo);
       };
 
  
-
-
     return (
         <div className="worldapp">
             <div className="worldapp__left">

@@ -66,7 +66,7 @@ const HospitalsBeds = () => {
 
     return (
         <div>
-            <h3 style={{padding: '1rem'}}>Hospitals & Beds</h3>
+            <h3 style={{padding: '1rem'}}>Total beds available in urban and rural hospitals</h3>
 
             <TextField style={{margin: '1rem'}} value={input} onChange={onInputChange} id="outlined-basic" label="State" variant="outlined" />
 
