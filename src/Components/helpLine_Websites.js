@@ -42,21 +42,6 @@ const helpWebsites = () => {
                 <Card className="hcard" variant="outlined">
                     <CardContent style={{ display: 'flex' , justifyContent: 'space-between' }}>
                         <Typography color="textSecondary">
-                            CovidBot Delhi 
-                            <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
-
-                        </Typography>
-                        <Typography color="textSecondary" gutterBottom>
-                            <a href="https://api.whatsapp.com/send/?=919910130828&text=covid+bot+delhi&app_absent=0">
-                                Visit <ArrowForwardIos /> 
-                            </a>
-                        </Typography>
-                    </CardContent>
-                </Card>
-
-                <Card className="hcard" variant="outlined">
-                    <CardContent style={{ display: 'flex' , justifyContent: 'space-between' }}>
-                        <Typography color="textSecondary">
                             Delhi Fights Corona
                             <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
                         </Typography>
