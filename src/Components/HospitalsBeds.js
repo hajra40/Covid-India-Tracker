@@ -47,7 +47,6 @@ const HospitalsBeds = () => {
             await fetch('https://api.rootnet.in/covid19-in/hospitals/beds')
             .then(data=> data.json())
             .then(res => {
-                // console.log(res)
                 setHospitals(res.data.regional)
             })
             .catch(err => alert(err))

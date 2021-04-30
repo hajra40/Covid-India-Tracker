@@ -28,6 +28,20 @@ const helpWebsites = () => {
                 <Card className="hcard" variant="outlined">
                     <CardContent style={{ display: 'flex' , justifyContent: 'space-between' }}>
                         <Typography color="textSecondary">
+                            Latest Contacts 
+                            <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
+                        </Typography>
+                        <Typography color="textSecondary" gutterBottom>
+                            <a href="https://www.theuncutteam.com/resources">
+                                <Button>Visit <ArrowForwardIos /> </Button>
+                            </a>
+                        </Typography>
+                    </CardContent>
+                </Card>
+
+                <Card className="hcard" variant="outlined">
+                    <CardContent style={{ display: 'flex' , justifyContent: 'space-between' }}>
+                        <Typography color="textSecondary">
                             Available Beds in hyderabad
                             <VerifiedUserIcon style={{color: 'green' , margin: '0rem 0.3rem'}} />
                         </Typography>

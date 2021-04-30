@@ -88,28 +88,14 @@ export default function VerticalLinearStepper() {
                  stage2 ? (
                    <div>
                      <h4 style={{margin: '0.7rem'}}>Kindly, isolate yourself at home if beds are not available and immediately consult a doctor.</h4>
-                     <h5 style={{margin: '0.7rem'}}>Visit <strong><a href="https://covid19-twitter.in/">Covid19-twitter </a></strong> if it's urgent</h5>
-                     <h5 style={{margin: '0.7rem'}}>Few Tips : </h5>
-                     <h6 style={{margin: '0.7rem'}}>Consume enough fibre </h6>
-                     <h6 style={{margin: '0.7rem'}}>Stay hydrated </h6>
-                     <h6 style={{margin: '0.7rem'}}>Limit your fat intake  </h6>
-                     <h6 style={{margin: '0.7rem'}}>Limit your sugar intake </h6>
-                     <h6 style={{margin: '0.7rem'}}>Limit your salt intake  </h6>
-                     <h6 style={{margin: '0.7rem'}}>Follow safe food handling practices </h6>
-                     <h6 style={{margin: '0.7rem'}}>Prepare home-cooked meals </h6>
+                     <h4 className="twitter_card"><strong><a href="https://covid19-twitter.in/">Twitter Search | Covid Supply Finder</a></strong></h4>
+                     <h4><a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html">Register for vaccination</a></h4>
                    </div>
                  ) : (
                     <div>
                       <h4 style={{margin: '0.7rem'}}>Nothing much to worry , but keep following the precautions and quarantine yourself. Take good & healthy food</h4>
-                      <h5 style={{margin: '0.7rem'}}><strong>Save <a href="https://covid19-twitter.in/">Covid19-twitter </a> link for urgent cases</strong></h5>
-                      <h5 style={{margin: '0.7rem'}}>Few Tips : </h5>
-                      <h6 style={{margin: '0.7rem'}}>Consume enough fibre </h6>
-                      <h6 style={{margin: '0.7rem'}}>Stay hydrated </h6>
-                      <h6 style={{margin: '0.7rem'}}>Limit your fat intake  </h6>
-                      <h6 style={{margin: '0.7rem'}}>Limit your sugar intake </h6>
-                      <h6 style={{margin: '0.7rem'}}>Limit your salt intake  </h6>
-                      <h6 style={{margin: '0.7rem'}}>Follow safe food handling practices </h6>
-                      <h6 style={{margin: '0.7rem'}}>Prepare home-cooked meals </h6>
+                      <h4 className="twitter_card"><strong><a href="https://covid19-twitter.in/">Twitter Search | Covid Supply Finder</a></strong></h4>
+                     <h4><a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html">Register for vaccination</a></h4>  
                     </div>
                  )
                }

@@ -6,9 +6,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import React, { useEffect, useState } from 'react'
-import {  TextField } from '@material-ui/core'
+import {  Typography } from '@material-ui/core'
 import '../App.css'
-import { makeStyles, withStyles } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
@@ -30,7 +30,7 @@ const StyledTableCell = withStyles((theme) => ({
   
 
 const HospitalsBeds = () => {
-    const [input , setinput] = useState('');
+    const [lastupdated , setlastupdated] = useState('');
     const [statewise_updates , setStatewise_updates] = useState([])
 
     useEffect(() => {
@@ -40,6 +40,7 @@ const HospitalsBeds = () => {
             .then(data=> data.json())
             .then(res => {
                 setStatewise_updates(res.data.regional)
+                setlastupdated(res.lastRefreshed)
             })
             .catch(err => alert(err))
         }
@@ -47,14 +48,13 @@ const HospitalsBeds = () => {
         statewise_updates();
     } , [])
 
-    const onInputChange = (e) => {
-        setinput(e.target.value);
-    }
 
     return (
         <div>
             <h3 style={{padding: '1rem'}}>Live Statewise Updates</h3>
-
+            <Typography color="textSecondary" style={{padding: '1rem'}}>
+                Last Updated : {lastupdated}
+            </Typography>
             <TableContainer component={Paper}>
                 <Table aria-label="customized table">
                     <TableHead>

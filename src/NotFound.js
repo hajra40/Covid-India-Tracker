@@ -10,7 +10,7 @@ const NotFound = () => {
                             404 Error
                         </Typography>
                         <Typography variant="h2" color="textSecondary" gutterBottom>
-                            OOPS !! No Corona Found.
+                            OOPS !! No Corona Information Over Here.
                         </Typography>
                         
                     </CardContent>
