@@ -4,6 +4,12 @@
 
 ### API - https://api.rootnet.in/
 
+## How to run?
+1. git clone https://github.com/hajra40/Covid-India-Tracker.git
+2. cd Covid-India-Tracker
+3. npm install
+4. npm start
+
 ## Screenshots 
 
 ![Screenshot from 2021-04-23 22-44-52](https://user-images.githubusercontent.com/68770929/115913444-3c5d7080-a48e-11eb-8c17-ade35105454c.png)
